@@ -17,7 +17,7 @@ class StdOut implements IoLogInterface
      */
     public function in($connId, $string)
     {
-        printf('< [%s] %s', $connId, $string);
+        printf("< [%s] %s\n", $connId, $string);
     }
 
     /**
@@ -27,7 +27,7 @@ class StdOut implements IoLogInterface
      */
     public function out($connId, $string)
     {
-        printf('> [%s] %s', $connId, $string);
+        printf("> [%s] %s\n", $connId, $string);
     }
 
     /**
@@ -37,6 +37,6 @@ class StdOut implements IoLogInterface
      */
     public function error($connId, \Exception $exception)
     {
-        printf('* [%s] %s', $connId, $exception->getMessage());
+        printf("* [%s] %s\n", $connId, $exception->getMessage());
     }
 }
