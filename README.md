@@ -1,3 +1,5 @@
+WORK IN PROGRESS
+
 # ratchet-event-log
 An extension for ratchet providing logging of incoming and outgoing messages
 
